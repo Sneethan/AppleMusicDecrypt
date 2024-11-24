@@ -1,10 +1,8 @@
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
 
 jobs:
-  build_winodws:
+  build_windows:
     name: Build Windows Version
     runs-on: windows-latest
     steps:
@@ -30,4 +28,3 @@ jobs:
         with:
           name: AppleMusicDecrypt-Windows
           path: AppleMusicDecrypt
-          
